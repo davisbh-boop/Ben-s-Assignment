@@ -1,7 +1,7 @@
 /* 1. Page Body - Changes the background and font for the whole website */
 body {
     font-family: sans-serif;
-    background-color: #e2e8f0; /* A soft light gray background */
+    background-color: #800020; /* A soft light gray background */
     margin: 50px;
 }
 
@@ -17,7 +17,7 @@ body {
 /* 3. Heading - Centers and colors your title */
 h1 {
     text-align: center;
-    color: #1a365d;       /* A nice dark navy blue */
+    color: #800020;       /* A nice dark navy blue */
 }
 
 /* 4. Image - Makes sure the image scales down to fit perfectly inside the box */
