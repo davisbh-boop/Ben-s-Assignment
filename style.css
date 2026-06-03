@@ -1,1 +1,35 @@
+/* 1. Page Body - Changes the background and font for the whole website */
+body {
+    font-family: sans-serif;
+    background-color: #e2e8f0; /* A soft light gray background */
+    margin: 50px;
+}
 
+/* 2. Container - The white box that holds your text and centers it */
+.container {
+    max-width: 500px;
+    margin: 0 auto;       /* Centers the box horizontally on the screen */
+    background: white;
+    padding: 25px;
+    border-radius: 10px;  /* Smoothly rounds the corners of the box */
+}
+
+/* 3. Heading - Centers and colors your title */
+h1 {
+    text-align: center;
+    color: #1a365d;       /* A nice dark navy blue */
+}
+
+/* 4. Image - Makes sure the image scales down to fit perfectly inside the box */
+img {
+    width: 100%;
+    border-radius: 5px;   /* Rounds the corners of the image slightly */
+    margin-bottom: 15px;  /* Adds space beneath the image before text starts */
+}
+
+/* 5. Paragraphs - Controls the spacing and size of your values text */
+p {
+    font-size: 18px;
+    line-height: 1.6;     /* Gives line spacing so it's easy to read */
+    margin: 15px 0;
+}
