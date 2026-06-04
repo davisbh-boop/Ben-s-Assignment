@@ -33,3 +33,21 @@ p {
     line-height: 1.6;     /* Gives line spacing so it's easy to read */
     margin: 15px 0;
 }
+
+/* Navigation Bar Styling */
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #1a365d; /* Matches your dark blue text color */
+    text-decoration: none; /* Removes the ugly underline under links */
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.navbar a:hover {
+    color: #3182ce; /* Changes color when you hover your mouse over it */
+}
