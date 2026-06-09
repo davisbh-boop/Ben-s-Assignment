@@ -1,53 +1,67 @@
-/* 1. Page Body - Changes the background and font for the whole website */
 body {
     font-family: sans-serif;
-    background-color: #800020; /* A soft light gray background */
+    background-color: #800020; 
     margin: 50px;
 }
 
-/* 2. Container - The white box that holds your text and centers it */
+
 .container {
     max-width: 500px;
-    margin: 0 auto;       /* Centers the box horizontally on the screen */
+    margin: 0 auto;       
     background: white;
     padding: 25px;
-    border-radius: 10px;  /* Smoothly rounds the corners of the box */
+    border-radius: 10px;  
 }
 
-/* 3. Heading - Centers and colors your title */
+
 h1 {
     text-align: center;
-    color: #800020;       /* A nice dark navy blue */
+    color: #800020;       
 }
 
-/* 4. Image - Makes sure the image scales down to fit perfectly inside the box */
+
 img {
     width: 100%;
-    border-radius: 5px;   /* Rounds the corners of the image slightly */
-    margin-bottom: 15px;  /* Adds space beneath the image before text starts */
+    border-radius: 5px;   
+    margin-bottom: 15px;  
 }
 
-/* 5. Paragraphs - Controls the spacing and size of your values text */
+
 p {
     font-size: 18px;
-    line-height: 1.6;     /* Gives line spacing so it's easy to read */
+    line-height: 1.6;     
     margin: 15px 0;
 }
 
-/* Navigation Bar Styling */
+
 .navbar {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
+
 
 .navbar a {
-    color: #1a365d; /* Matches your dark blue text color */
-    text-decoration: none; /* Removes the ugly underline under links */
+    background-color: #1a365d; 
+    color: white;              
+    text-decoration: none;     
     font-weight: bold;
-    padding: 0 10px;
+    font-size: 16px;
+    
+
+    padding: 10px 20px;        
+    
+   
+    margin: 0 5px;             
+    
+    border-radius: 5px;        
+    display: inline-block;    
+    
+  
+    transition: background-color 0.2s ease; 
 }
 
+
 .navbar a:hover {
-    color: #3182ce; /* Changes color when you hover your mouse over it */
+    background-color: #3182ce; 
 }
