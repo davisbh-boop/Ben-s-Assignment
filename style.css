@@ -1,64 +1,11 @@
-/* 1. LIGHT MODE DEFAULT VARIABLES */
-:root {
-  --bg-color: #800020;         /* Main burgundy page background */
-  --card-bg: #ffffff;          /* White container box */
-  --text-color: #111111;       /* Dark text for paragraph body */
-  --heading-color: #800020;    /* Burgundy heading color */
-  --nav-color: #1a365d;        /* Dark Blue nav buttons */
-  --nav-hover: #3182ce;        /* Light Blue hover */
-  --radius: 8px;
-}
-
-/* 2. DARK MODE OVERRIDES */
-[data-theme="dark"] {
-  --bg-color: #121212;         /* Very dark gray page background */
-  --card-bg: #1e1e1e;          /* Slightly lighter dark box for contrast */
-  --text-color: #ffffff;       /* Pure white text for paragraph body */
-  --heading-color: #63b3ed;    /* Light blue heading so it pops */
-  --nav-color: #2b6cb0;        /* Nav buttons in dark mode */
-  --nav-hover: #4299e1;
-}
-
-/* 3. PAGE BACKGROUND */
-body {
-  font-family: sans-serif;
-  background-color: var(--bg-color); 
-  margin: 0;
-  padding: 40px 20px;
-}
-
-/* 4. CONTAINER BOX */
-.container {
-  max-width: 500px;
-  margin: 0 auto;       
-  background-color: var(--card-bg);
-  padding: 25px;
-  border-radius: var(--radius);  
-}
-
-/* 5. TEXT & HEADINGS (THIS FIXES THE DISAPPEARING TEXT) */
-h1 {
-  text-align: center;
-  color: var(--heading-color) !important;       
-}
-
-p, strong, span, li {
-  color: var(--text-color) !important;
-  font-size: 18px;
-  line-height: 1.6;     
-  margin: 15px 0;
-}
-
-img {
-  width: 100%;
-  border-radius: 5px;   
-  margin-bottom: 15px;  
-}
-
 /* 6. NAVIGATION BAR & BUTTONS */
 .navbar {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 30px;
+  flex-wrap: wrap; /* Keeps it responsive on mobile screens */
 }
 
 .navbar a, .navbar button {
@@ -67,11 +14,17 @@ img {
   text-decoration: none;     
   font-weight: bold;
   font-size: 16px;
+  font-family: inherit; /* Ensures button uses the same font as links */
+  
   padding: 10px 15px;        
-  margin: 0 5px;             
   border: none;
   border-radius: var(--radius);        
-  display: inline-block;    
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
   cursor: pointer;
   transition: background-color 0.2s ease; 
 }
