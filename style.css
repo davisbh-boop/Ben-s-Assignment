@@ -1,25 +1,25 @@
-/* Light Mode (Default) */
+/* 1. LIGHT MODE DEFAULT VARIABLES */
 :root {
   --bg-color: #800020;         /* Main burgundy page background */
-  --card-bg: #ffffff;          /* White content container */
-  --text-color: #222222;       /* Dark text for body paragraphs */
+  --card-bg: #ffffff;          /* White container box */
+  --text-color: #111111;       /* Dark text for paragraph body */
   --heading-color: #800020;    /* Burgundy heading color */
   --nav-color: #1a365d;        /* Dark Blue nav buttons */
   --nav-hover: #3182ce;        /* Light Blue hover */
   --radius: 8px;
 }
 
-/* Dark Mode Theme */
+/* 2. DARK MODE OVERRIDES */
 [data-theme="dark"] {
-  --bg-color: #121212;         /* Dark page background */
-  --card-bg: #1e1e1e;          /* Slightly lighter dark box */
-  --text-color: #f1f1f1;       /* Crisp white body text */
-  --heading-color: #63b3ed;    /* Bright light blue headings */
+  --bg-color: #121212;         /* Very dark gray page background */
+  --card-bg: #1e1e1e;          /* Slightly lighter dark box for contrast */
+  --text-color: #ffffff;       /* Pure white text for paragraph body */
+  --heading-color: #63b3ed;    /* Light blue heading so it pops */
   --nav-color: #2b6cb0;        /* Nav buttons in dark mode */
   --nav-hover: #4299e1;
 }
 
-/* Page Background */
+/* 3. PAGE BACKGROUND */
 body {
   font-family: sans-serif;
   background-color: var(--bg-color); 
@@ -27,7 +27,7 @@ body {
   padding: 40px 20px;
 }
 
-/* White / Dark Container Box */
+/* 4. CONTAINER BOX */
 .container {
   max-width: 500px;
   margin: 0 auto;       
@@ -36,14 +36,14 @@ body {
   border-radius: var(--radius);  
 }
 
-/* Text & Headings */
+/* 5. TEXT & HEADINGS (THIS FIXES THE DISAPPEARING TEXT) */
 h1 {
   text-align: center;
-  color: var(--heading-color);       
+  color: var(--heading-color) !important;       
 }
 
-p {
-  color: var(--text-color);
+p, strong, span, li {
+  color: var(--text-color) !important;
   font-size: 18px;
   line-height: 1.6;     
   margin: 15px 0;
@@ -55,7 +55,7 @@ img {
   margin-bottom: 15px;  
 }
 
-/* Navigation Bar */
+/* 6. NAVIGATION BAR & BUTTONS */
 .navbar {
   text-align: center;
   margin-bottom: 30px;
@@ -63,7 +63,7 @@ img {
 
 .navbar a, .navbar button {
   background-color: var(--nav-color); 
-  color: white;             
+  color: #ffffff !important;             
   text-decoration: none;     
   font-weight: bold;
   font-size: 16px;
