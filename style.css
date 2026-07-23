@@ -1,67 +1,70 @@
+/* 1. Global variables (stores your site colors in one place) */
+:root {
+  --primary-color: #800020;    /* Burgundy */
+  --nav-color: #1a365d;        /* Dark Blue */
+  --nav-hover: #3182ce;        /* Light Blue */
+  --card-bg: #ffffff;          /* White container */
+  --radius: 8px;               /* Rounded corners */
+}
+
+/* 2. Main Page Background */
 body {
-    font-family: sans-serif;
-    background-color: #800020; 
-    margin: 50px;
+  font-family: sans-serif;
+  background-color: var(--primary-color); 
+  margin: 0;
+  padding: 40px 20px;
 }
 
-
+/* 3. Main Content Box */
 .container {
-    max-width: 500px;
-    margin: 0 auto;       
-    background: white;
-    padding: 25px;
-    border-radius: 10px;  
+  max-width: 500px;
+  margin: 0 auto;       
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--radius);  
 }
 
-
+/* 4. Headings */
 h1 {
-    text-align: center;
-    color: #800020;       
+  text-align: center;
+  color: var(--primary-color);       
 }
 
-
+/* 5. Images */
 img {
-    width: 100%;
-    border-radius: 5px;   
-    margin-bottom: 15px;  
+  width: 100%;
+  border-radius: 5px;   
+  margin-bottom: 15px;  
 }
 
-
+/* 6. Paragraph Text */
 p {
-    font-size: 18px;
-    line-height: 1.6;     
-    margin: 15px 0;
+  font-size: 18px;
+  line-height: 1.6;     
+  margin: 15px 0;
 }
 
-
+/* 7. Navigation Bar Container */
 .navbar {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-
+/* 8. Navigation Buttons */
 .navbar a {
-    background-color: #1a365d; 
-    color: white;              
-    text-decoration: none;     
-    font-weight: bold;
-    font-size: 16px;
-    
-
-    padding: 10px 20px;        
-    
-   
-    margin: 0 5px;             
-    
-    border-radius: 5px;        
-    display: inline-block;    
-    
-  
-    transition: background-color 0.2s ease; 
+  background-color: var(--nav-color); 
+  color: white;             
+  text-decoration: none;     
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;        
+  margin: 0 5px;             
+  border-radius: var(--radius);        
+  display: inline-block;    
+  transition: background-color 0.2s ease; 
 }
 
-
+/* 9. Navigation Hover Effect */
 .navbar a:hover {
-    background-color: #3182ce; 
+  background-color: var(--nav-hover); 
 }
