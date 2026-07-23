@@ -1,4 +1,26 @@
-/* 1. Global variables (stores your site colors in one place) */
+/* Light Mode (Default) */
+:root {
+  --primary-color: #800020;    /* Burgundy header/bg */
+  --nav-color: #1a365d;        /* Dark Blue nav */
+  --nav-hover: #3182ce;        /* Light Blue hover */
+  --card-bg: #ffffff;          /* White container */
+  --text-color: #000000;       /* Black text */
+  --radius: 8px;
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  --primary-color: #1a1a1a;    /* Dark background */
+  --nav-color: #3182ce;        /* Lighter nav buttons */
+  --nav-hover: #63b3ed;
+  --card-bg: #2d3748;          /* Dark gray container */
+  --text-color: #ffffff;       /* White text */
+}
+
+/* Make sure text color uses the variable */
+p, h1 {
+  color: var(--text-color);
+}
 :root {
   --primary-color: #800020;    /* Burgundy */
   --nav-color: #1a365d;        /* Dark Blue */
