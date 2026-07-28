@@ -1,4 +1,8 @@
-/* 6. NAVIGATION BAR & BUTTONS */
+:root {
+  --nav-color: #003366;  /* Set your preferred button color */
+  --nav-hover: #0055a5;  /* Set your preferred hover color */
+  --radius: 6px;         /* Set your preferred corner roundness */
+}/* 6. NAVIGATION BAR & BUTTONS */
 .navbar {
   display: flex;
   justify-content: center;
