@@ -1,80 +1,26 @@
-/* 1. GLOBAL VARIABLES */
-:root {
-  --bg-color: #f4f6f8;
-  --card-bg: #ffffff;
-  --text-color: #333333;
-  --nav-color: #003366;
-  --nav-hover: #0055a5;
-  --radius: 8px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Purpose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* 2. BASE STYLES */
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Purpose</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="theme-toggle">Dark Mode</button>
+    </nav>
 
-/* 3. NAVIGATION BAR & BUTTONS */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
+    <div class="container">
+        <h1>Our Purpose</h1>
+        <p>These four Trinity values help us build a safe, supportive, and successful learning environment for all students in New Zealand.</p>
+        <p>We practice these values in the classroom, on the sports field, and out in our community every day.</p>
+    </div>
 
-.navbar a, .navbar button {
-  background-color: var(--nav-color); 
-  color: #ffffff !important;             
-  text-decoration: none;     
-  font-weight: bold;
-  font-size: 16px;
-  font-family: inherit;
-  
-  padding: 10px 15px;        
-  border: none;
-  border-radius: var(--radius);        
-  
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  
-  cursor: pointer;
-  transition: background-color 0.2s ease; 
-}
-
-.navbar a:hover, .navbar button:hover {
-  background-color: var(--nav-hover); 
-}
-
-/* 4. MAIN CONTENT CONTAINER */
-.container {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  text-align: center;
-}
-
-.container img {
-  max-width: 150px;
-  height: auto;
-  margin: 15px 0;
-  border-radius: var(--radius);
-}
-
-.container p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 10px 0;
-}
+    <script src="script.js"></script>
+</body>
+</html>
