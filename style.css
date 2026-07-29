@@ -1,42 +1,11 @@
-/* 1. GLOBAL VARIABLES */
-:root {
-  --bg-color: #f4f6f8;
-  --card-bg: #ffffff;
-  --text-color: #333333;
-  --nav-color: #003366;
-  --nav-hover: #0055a5;
-  --radius: 8px;
-}
-
-/* DARK MODE OVERRIDES */
-[data-theme="dark"] {
-  --bg-color: #121212;
-  --card-bg: #1e1e1e;
-  --text-color: #e0e0e0;
-  --nav-color: #1f4068;
-  --nav-hover: #162447;
-}
-
-/* 2. BASE STYLES */
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 3. NAVIGATION BAR & BUTTONS */
+/* 6. NAVIGATION BAR & BUTTONS */
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Keeps it responsive on mobile screens */
 }
 
 .navbar a, .navbar button {
@@ -45,7 +14,7 @@ body {
   text-decoration: none;     
   font-weight: bold;
   font-size: 16px;
-  font-family: inherit;
+  font-family: inherit; /* Ensures button uses the same font as links */
   
   padding: 10px 15px;        
   border: none;
@@ -62,28 +31,4 @@ body {
 
 .navbar a:hover, .navbar button:hover {
   background-color: var(--nav-hover); 
-}
-
-/* 4. MAIN CONTENT CONTAINER */
-.container {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  text-align: center;
-}
-
-.container img {
-  max-width: 150px;
-  height: auto;
-  margin: 15px 0;
-  border-radius: var(--radius);
-}
-
-.container p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 10px 0;
 }
