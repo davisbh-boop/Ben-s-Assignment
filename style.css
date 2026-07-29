@@ -1,10 +1,10 @@
-/* 1. GLOBAL VARIABLES */
+/* 1. GLOBAL VARIABLES - DARK RED THEME */
 :root {
-  --bg-color: #f4f6f8;
-  --card-bg: #ffffff;
-  --text-color: #333333;
-  --nav-color: #003366;
-  --nav-hover: #0055a5;
+  --bg-color: #f4f0f0;       /* Soft light background */
+  --card-bg: #ffffff;        /* Main content card background */
+  --text-color: #2b2b2b;      /* Dark text for readability */
+  --nav-color: #800000;      /* Dark Red / Maroon navbar buttons */
+  --nav-hover: #a01212;      /* Lighter red on hover */
   --radius: 8px;
 }
 
@@ -13,8 +13,8 @@
   --bg-color: #121212;
   --card-bg: #1e1e1e;
   --text-color: #e0e0e0;
-  --nav-color: #1f4068;
-  --nav-hover: #162447;
+  --nav-color: #5c0000;      /* Deeper dark red for dark mode */
+  --nav-hover: #7a0000;
 }
 
 /* 2. BASE STYLES */
