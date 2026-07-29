@@ -1,4 +1,4 @@
-/* 1. /* 1. GLOBAL VARIABLES */
+/* 1. GLOBAL VARIABLES */
 :root {
   --bg-color: #f4f6f8;
   --card-bg: #ffffff;
@@ -15,14 +15,6 @@
   --text-color: #e0e0e0;
   --nav-color: #1f4068;
   --nav-hover: #162447;
-}GLOBAL VARIABLES */
-:root {
-  --bg-color: #f4f6f8;
-  --card-bg: #ffffff;
-  --text-color: #333333;
-  --nav-color: #003366;
-  --nav-hover: #0055a5;
-  --radius: 8px;
 }
 
 /* 2. BASE STYLES */
