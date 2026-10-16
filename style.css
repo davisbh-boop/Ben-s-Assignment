@@ -1,1 +1,34 @@
+/* 6. NAVIGATION BAR & BUTTONS */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Keeps it responsive on mobile screens */
+}
 
+.navbar a, .navbar button {
+  background-color: var(--nav-color); 
+  color: #ffffff !important;             
+  text-decoration: none;     
+  font-weight: bold;
+  font-size: 16px;
+  font-family: inherit; /* Ensures button uses the same font as links */
+  
+  padding: 10px 15px;        
+  border: none;
+  border-radius: var(--radius);        
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+  cursor: pointer;
+  transition: background-color 0.2s ease; 
+}
+
+.navbar a:hover, .navbar button:hover {
+  background-color: var(--nav-hover); 
+}
